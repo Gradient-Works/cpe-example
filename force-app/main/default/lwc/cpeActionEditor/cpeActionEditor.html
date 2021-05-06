@@ -1,0 +1,20 @@
+<template>
+    <lightning-input
+        type="text" label="Query" min-length="3" required
+        class="input-query"
+        value={query}
+        onchange={handleQueryChanged}
+    ></lightning-input>
+    <lightning-input
+        type="number" label="Count" min="1" max="200" required
+        class="input-count"
+        value={count}
+        onchange={handleCountChanged}
+    ></lightning-input>
+    <lightning-input
+        type="checkbox" label="Active" variant="label-stacked"
+        class="input-active"
+        checked={active}
+        onchange={handleActiveChanged}
+    ></lightning-input>
+</template>
